@@ -1,7 +1,6 @@
 import React, {useContext, useState} from 'react';
 import './TodoForm.css'
 import { TodoContext } from '../TodoContext';
-import CampFire from '../Campfire';
 
 const TodoForm = () => {
   const [newValueTodo, setNewValueTodo] = useState('');
@@ -9,14 +8,6 @@ const TodoForm = () => {
     addTodo,
     setOpenModal
   } = useContext(TodoContext);
-
-  const styleCampfire = {
-    position:'relative',
-    bottom: '1vh',
-    left: '-22vh',
-    height: '13vh',
-    width: '13vh',
-  }
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -41,7 +32,6 @@ const TodoForm = () => {
         <button type='' className="TodoForm-button TodoForm-button--cancel" onClick={onCancel}>Cancel</button>
         <button type='submit' className="TodoForm-button TodoForm-button--add">Add</button>
       </div>
-      <CampFire style={styleCampfire} />
     </form>
   );
 }

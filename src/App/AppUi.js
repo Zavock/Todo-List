@@ -13,7 +13,7 @@ import { TodoForm } from '../TodoForm';
 const AppUi = () => {
   const styleCampfire = {
     position:'relative',
-    bottom: '-8vh',
+    bottom: '-5vh',
     left: '-18vh',
     height: '15vh',
     width: '15vh',
@@ -43,7 +43,7 @@ const AppUi = () => {
         </>
         }
         {error && <p>Hubo un error</p>}
-        {(!loading && searchTodo.length === 0) && <p style={{color:'white'}}>Crea un TODO!</p>}
+        {(!loading && searchTodo.length === 0) && <p style={{color:'rgba(216,150,84,1)', textAlign:'center', fontSize:'20px', fontWeight:'bold'}}>Create a new TODO!</p>}
         {searchTodo.map(todo => 
           <TodoItem 
             key={todo.text}
