@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  height: 100px;
+  width: 100px;
+}
+.TodoTitle {
+  font-size: 28px;
+  margin: 0;
+  padding: 48px 5px;
+  font-weight: normal;
+  color: #EFE6DD;
+}
+
+.TodoTitle span {
+  font-weight: bold;
+  color: #BB4430;
+}
