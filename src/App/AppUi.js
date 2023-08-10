@@ -4,7 +4,7 @@ import { TodoSearch } from '../TodoSearch'
 import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
 import { TodoButtonCreate } from '../TodoButtonCreate';
-import TodosLoading from '../TodosLoading';
+import { TodosLoading } from '../TodosLoading';
 import CampFire from '../Campfire';
 import { TodoContext } from '../TodoContext';
 import { Modal } from '../Modal';
