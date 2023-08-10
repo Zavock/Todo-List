@@ -12,11 +12,13 @@ import { TodoForm } from '../TodoForm';
 
 const AppUi = () => {
   const styleCampfire = {
-    position:'fixed',
-    bottom: '24px',
-    height: '100px',
-    width: '100px',
+    position:'relative',
+    bottom: '-8vh',
+    left: '-18vh',
+    height: '15vh',
+    width: '15vh',
   }
+  
   const {
     loading,
     error,
@@ -26,8 +28,9 @@ const AppUi = () => {
     openModal,
     setOpenModal
   } = useContext(TodoContext);
+
   return (
-    <React.Fragment>
+    <div className='container'>
       <TodoTitle />
       <TodoSearch />
 
@@ -59,7 +62,7 @@ const AppUi = () => {
         </Modal>
       )}
       
-    </React.Fragment>
+    </div>
   );
 }
 

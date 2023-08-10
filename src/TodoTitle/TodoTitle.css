@@ -1,22 +1,30 @@
-.container {
+.containerTitle {
+  padding: 0;
   display: flex;
+  flex-direction:column;
   justify-content: center;
   align-items: center;
+
 }
 
-.container img {
-  height: 100px;
-  width: 100px;
+.containerTitle img {
+  position: relative;
+  height: 12vh;
+  width: 12vh;
+  bottom: -4vh;
+  left: 1vh;
 }
+
 .TodoTitle {
+  text-align: center;
   font-size: 28px;
-  margin: 0;
-  padding: 48px 5px;
+  margin-bottom: 3vh;
+  padding: 1vh 1vh 3vh 0;
   font-weight: normal;
   color: #EFE6DD;
 }
 
 .TodoTitle span {
   font-weight: bold;
-  color: #BB4430;
+  color: rgba(216,150,84,1);
 }

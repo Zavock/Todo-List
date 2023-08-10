@@ -1,21 +1,18 @@
 .ButtonCreate {
-  background-color: #BB4430;
+  background-color: rgba(216,150,84,1);
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
   font-size: 50px;
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: 2vh;
+  right: 2vh;
   font-weight: bold;
   color: #231F20;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 64px;
   width: 64px;
   z-index: 1;
-
   transform: rotate(9);
   transition: .3s ease;
 }

@@ -1,12 +1,23 @@
 body {
+  display: flex;
+  justify-content: center;
   margin: 0;
-  padding: 0;
-  background: #231F20;
+  padding: 10vh 0 0 0;
+  background: #D9E8E2;
   color: #1E1E1F;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
-#root {
+.container {
+  padding: 5vh 10vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+  background: linear-gradient(221deg, rgba(10,10,10,1) 82%, rgba(216,150,84,1) 94%);
+}
+
+  #root {
   margin: 0 24px;
   position: relative;
   min-height: 100vh;

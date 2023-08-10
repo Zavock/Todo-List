@@ -11,11 +11,11 @@ const TodoForm = () => {
   } = useContext(TodoContext);
 
   const styleCampfire = {
-    position:'absolute',
-    bottom: '28%',
-    left: '36.7%',
-    height: '100px',
-    width: '100px',
+    position:'relative',
+    bottom: '1vh',
+    left: '-22vh',
+    height: '13vh',
+    width: '13vh',
   }
 
   const onSubmit = (e) => {
@@ -34,11 +34,12 @@ const TodoForm = () => {
 
   return (
     <form onSubmit={onSubmit}>
+      <img src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/432780e4-f104-4387-987f-8611d44dc1c4/d8bsfln-451d9d25-e8e1-4bf5-badf-06f5154dfb3f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQzMjc4MGU0LWYxMDQtNDM4Ny05ODdmLTg2MTFkNDRkYzFjNFwvZDhic2Zsbi00NTFkOWQyNS1lOGUxLTRiZjUtYmFkZi0wNmY1MTU0ZGZiM2YuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lmMZBUyHiozshYUveGt0-H0sHLez4SDP8vqFsZDvZYc' alt='hollow' />
       <label>Ingresa la actividad</label>
-      <textarea onChange={onChange}></textarea>
+      <input onChange={onChange}></input>
       <div className="TodoForm-buttonContainer">
-        <button type='' className="TodoForm-button TodoForm-button--cancel" onClick={onCancel}>Cancelar</button>
-        <button type='submit' className="TodoForm-button TodoForm-button--add">Agregar</button>
+        <button type='' className="TodoForm-button TodoForm-button--cancel" onClick={onCancel}>Cancel</button>
+        <button type='submit' className="TodoForm-button TodoForm-button--add">Add</button>
       </div>
       <CampFire style={styleCampfire} />
     </form>

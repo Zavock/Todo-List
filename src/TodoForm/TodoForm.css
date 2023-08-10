@@ -1,26 +1,48 @@
 form {
   width: 90%;
+  height: 35%;
   max-width: 300px;
   display: flex;
   border-radius:10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 50px;
-  gap: 25px;
-  background: linear-gradient(350deg, rgba(0,0,0,1) 0%, rgba(22,25,20,1) 34%, rgba(66,61,61,1) 100%);
+  padding: 0 50px 50px;
+  background: #231F20;
+  box-shadow: 0px 0px 9px 6px rgba(171,116,34,1);
 }
 
-textarea{
-  height: 100px;
+form img {
+  position: relative;
+  width: 20vh;
+  bottom: 8vh;
+  right: 0vh;
+}
+
+input{
+  height: 50px;
   width: 300px;
-  font-size: 24px;
+  border-radius: 20px;
+  background-color: #ECE2D0;
+  font-size: 20px;
   padding: 12px;
   border: 2px solid #BE9874;
 
 }
+@keyframes wipe-in-up {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
 
-textarea::placeholder {
+[transition-style="in:wipe:up"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
+}
+
+input::placeholder {
   color: #A5A5A5;
   font-family: 'Montserrat';
   font-weight: 400;
@@ -29,12 +51,12 @@ textarea::placeholder {
 label {
   margin-bottom: 26px;
   text-align: center;
-
-  font-size: 28px;
+  color: #EFE6DD;
+  font-size: 30px;
 }
 
 .TodoForm-buttonContainer {
-  margin-top: 14px;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,17 +77,20 @@ label {
 }
 
 .TodoForm-button--cancel {
-  background: rgba(135,26,7,1);
-}
-
-.TodoForm-button--cancel:hover {
-  background: linear-gradient(180deg, rgba(249,37,10,1) 0%, rgba(135,26,7,1) 34%, rgba(13,13,13,1) 100%);
+  background: #871a07;
 }
 
 .TodoForm-button--add {
   background: green;
 }
 
-.TodoForm-button--add:hover {
-  background: linear-gradient(180deg, rgba(60,193,75,1) 0%, rgba(50,99,15,1) 34%, rgba(13,13,13,1) 100%);
+.TodoForm-button--cancel:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(204, 53, 27, .4);
 }
+
+.TodoForm-button--add:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(29, 145, 35, .4);
+}
+
