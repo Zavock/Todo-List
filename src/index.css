@@ -21,8 +21,22 @@ body {
   background: linear-gradient(221deg, rgba(10,10,10,1) 82%, rgba(216,150,84,1) 94%);
 }
 
-  #root {
+.CampFire {
+  position: relative;
+  bottom: -5vh;
+  left: -18vh;
+  height: 15vh;
+  width: 15vh;
+}
+
+#root {
   margin: 0 24px;
   position: relative;
   min-height: 100vh;
+}
+
+@media (max-width:400px) {
+  .container {
+    padding: 2vh;
+  }
 }

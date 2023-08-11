@@ -5,20 +5,11 @@ import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
 import { TodoButtonCreate } from '../TodoButtonCreate';
 import { TodosLoading } from '../TodosLoading';
-import CampFire from '../Campfire';
 import { TodoContext } from '../TodoContext';
 import { Modal } from '../Modal';
 import { TodoForm } from '../TodoForm';
 
 const AppUi = () => {
-  const styleCampfire = {
-    position:'relative',
-    bottom: '-5vh',
-    left: '-18vh',
-    height: '15vh',
-    width: '15vh',
-  }
-  
   const {
     loading,
     error,
@@ -39,7 +30,6 @@ const AppUi = () => {
         <>
           <TodosLoading />
           <TodosLoading />
-          <TodosLoading />
         </>
         }
         {error && <p>Hubo un error</p>}
@@ -55,7 +45,7 @@ const AppUi = () => {
         )}
       </TodoList>
       <TodoButtonCreate setOpenModal={setOpenModal} />
-      <CampFire style={styleCampfire} />
+      <img src='https://i.pinimg.com/originals/80/21/74/8021744fc275101ed9a4b75ace41f168.gif' className='CampFire' alt='campfire'/>
       {openModal && (
         <Modal>
           <TodoForm />
