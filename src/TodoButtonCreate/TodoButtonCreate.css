@@ -1,15 +1,15 @@
 .ButtonCreate {
-  background-color: rgba(216,150,84,1);
+  background-color: #F39C12  ;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+  box-shadow: inset 0px 0px 8px 4px rgba(0,0,0,0.41);
   font-size: 50px;
   position: fixed;
   bottom: 2vh;
   right: 2vh;
   font-weight: bold;
-  color: #231F20;
+  color: white;
   height: 64px;
   width: 64px;
   z-index: 1;
@@ -19,4 +19,10 @@
 
 .ButtonCreate:hover {
   transform: rotate(224deg);
+}
+
+@media (max-width:715px) {
+  .ButtonCreate {
+    box-shadow: none;
+  }
 }

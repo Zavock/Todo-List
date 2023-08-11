@@ -9,27 +9,23 @@ form {
   align-items: center;
   padding: 0 50px 100px;
   background: #231F20;
-  box-shadow: 0px 0px 9px 6px rgba(171,116,34,1);
+  box-shadow: 0px 0px 9px 6px rgba(65, 53, 103,1);
 }
 
 form img {
   position: relative;
-  width: 20vh;
-  bottom: 8vh;
-  right: 0vh;
+  width: 25vh;
 }
 
 input{
   height: 50px;
   width: 300px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #ECE2D0;
   font-size: 20px;
   padding: 12px;
   border: 2px solid #BE9874;
-
 }
-
 
 input::placeholder {
   color: #A5A5A5;
@@ -69,21 +65,21 @@ label {
 }
 
 .TodoForm-button--add {
-  background: green;
+  background: #413567;
 }
 
 .TodoForm-button--cancel:hover {
   color: #871a07;
   font-weight: bold;
-  border: 3px solid #871a07;
+  border: 2px solid #871a07;
   background: transparent;
   transition: 0.3s;
 }
 
 .TodoForm-button--add:hover {
-  color: green;
+  color: #413567;
   font-weight: bold;
-  border: 3px solid green;
+  border: 2px solid #413567;
   background: transparent;
   transition: 0.3s;
 }

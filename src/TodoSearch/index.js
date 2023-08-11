@@ -8,9 +8,12 @@ const TodoSearch = () => {
     setSearchValue
   } = useContext(TodoContext);
   return (
-    <input className='TodoSearch' placeholder='Search TODO' value={searchValue} onChange={(e) => {
+    <div className='containerInput'>
+      <input className='TodoSearch' placeholder='Search TODO' value={searchValue} onChange={(e) => {
       setSearchValue(e.target.value);
-    }} />
+      }} />
+    </div>
+    
   );
 }
 

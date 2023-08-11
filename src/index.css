@@ -3,11 +3,7 @@ body {
   justify-content: center;
   margin: 0;
   padding: 3vh 0 0 0;
-  background: #D9E8E2;
-  /* background-image: url('https://img.freepik.com/vector-premium/fondo-pixel-art-granja-otonal_23-2149597070.jpg?w=2000');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
+  background: rgba(216,150,84,1) ;
   color: #1E1E1F;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
@@ -18,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
-  background: linear-gradient(221deg, rgba(10,10,10,1) 82%, rgba(216,150,84,1) 94%);
+  background: linear-gradient(221deg, rgba(20,20,20,60) 82%, rgba(216,150,84,1) 94%);
 }
 
 .CampFire {
@@ -35,8 +31,40 @@ body {
   min-height: 100vh;
 }
 
-@media (max-width:400px) {
-  .container {
-    padding: 2vh;
+@media (max-width:720px) {
+  #root {
+    display: flex;
+    margin: 0;
+  }
+
+  body {
+    padding: 3vh;
+  }
+
+  .CampFire {
+    display: none;
   }
 }
+
+@media (max-width:415px) {
+  #root {
+    display: flex;
+    margin: 0;
+  }
+
+  body {
+    padding: 0;
+    background: rgba(20,20,20,60);
+  }
+
+  .container {
+    padding: 1vh 2vh;
+    border-radius: 0px;
+  }
+
+  .CampFire {
+    display: none;
+  }
+}
+
+

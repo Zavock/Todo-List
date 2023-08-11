@@ -11,7 +11,7 @@ const TodoTitle = () => {
     <div className='containerTitle'>
       <img src='https://cdna.artstation.com/p/assets/images/images/052/141/832/original/johan-cediel-rodriguez-pixel-art-take-008.gif?1659036879' alt='solaire-astora'/>
       <h1 className='TodoTitle'>
-        Has completado <span>{todoCompleted}</span> de <span>{totalTodos}</span> TODOs
+        You have completed <span>{todoCompleted}</span> of <span>{totalTodos}</span> TODOs
       </h1>
     </div>
     

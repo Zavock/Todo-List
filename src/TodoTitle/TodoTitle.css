@@ -9,10 +9,8 @@
 
 .containerTitle img {
   position: relative;
-  height: 12vh;
-  width: 12vh;
+  height: 15vh;
   bottom: -4vh;
-  left: 1vh;
 }
 
 .TodoTitle {
