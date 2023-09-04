@@ -61,6 +61,7 @@ body {
   .container {
     padding: 2rem 1rem;
     border-radius: 0px;
+    box-shadow: none;
   }
 
   .CampFire {
