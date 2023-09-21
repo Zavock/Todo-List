@@ -33,12 +33,4 @@ function useLocalStorage(storageName, initialValues) {
 
   return {item, saveItems, loading, error};
 }
-// const initialValues = [
-//   {text: 'Hacer cardio', complete:true},
-//   {text: 'Hacer maraton', complete:true},
-//   {text: 'Hacer pizza', complete:false},
-// ]
-
-// const initialValuesParse = JSON.stringify(initialValues)
-// localStorage.setItem('TODOS_V1', initialValuesParse)
 export {useLocalStorage};
